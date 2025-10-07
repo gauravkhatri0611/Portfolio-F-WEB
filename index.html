@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home — Gaurav Khatri</title>
+        <meta name="description"
+            content="Home — Personal website of Gaurav Khatri. Student at Conestoga College and IT Service Desk Work-Study.">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <div class="branding">
+                    <img src="images/logo.webp" alt="Logo of Gaurav Khatri" class="logo">
+                    <div class="branding-text">
+                        <h1 class="site-title">Gaurav Khatri</h1>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <img src="images/menu.webp" alt="Menu" class="icon hamburger-icon">
+                    <img src="images/close.webp" alt="Close" class="icon close-icon">
+                </label>
+
+                <div class="menu">
+                    <nav aria-label="Main navigation" class="main-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="interests.html">Interests</a></li>
+                            <li><a href="docs/GauravKhatri_Resume.pdf" target="_blank">Resume</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <a href="mailto:yourname@email.com" class="btn-primary">Contact Me</a>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/gaurav-khatri-61396616b/" aria-label="LinkedIn">
+                                <img src="images/linkedin.webp" alt="LinkedIn" class="icon">
+                            </a>
+                            <a href="https://github.com/gauravkhatri0611" aria-label="GitHub">
+                                <img src="images/github.webp" alt="GitHub" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container main-content">
+            <section class="hero" aria-labelledby="intro-heading">
+                <figure class="hero-figure">
+                    <img src="images/profile.webp" alt="Profile of Gaurav Khatri" class="hero-image">
+                </figure>
+                <div class="hero-text">
+                    <h2 id="intro-heading" class="visually-hidden">Introduction</h2>
+                    <p class="intro-sentence">
+                        Hi, my name is <strong>Gaurav Khatri</strong>. I am a student at Conestoga College and
+                        Work-Study at the IT Service Desk. I am a budding developer with a passion for web development,
+                        UI/UX design, and Full-stack technologies.
+                    </p>
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                </div>
+            </section>
+
+            <section class="highlights" aria-labelledby="highlights-heading">
+                <h2 id="highlights-heading">Skills & Studies</h2>
+                <div class="flex-row">
+                    <div class="card">
+                        <h3>Skills</h3>
+                        <p>JavaScript, React.js, Next.js, Node.js, WebSocket, Chart.js, Ant Design, AWS, MongoDB.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Education</h3>
+                        <p>PG Diploma in Web Development — Conestoga College (2025–2026)<br>
+                            B.Tech in CSE — The NorthCap University (2019–2023)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Experience</h3>
+                        <p>Associate Software Engineer @ Quara Digital (2023–2024)<br>
+                            IT Service Desk @ Conestoga College (2025–Present)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="flex-row">
+                    <div class="card">
+                        <h3>WASALT Real Estate</h3>
+                        <p>Developed scalable real estate platform with live bidding using React, Next.js, and
+                            WebSocket.</p>
+                        <a href="https://auction.wasalt.sa/en" class="btn-link">View Project</a>
+                    </div>
+                    <div class="card">
+                        <h3>3D Portfolio</h3>
+                        <p>Interactive personal portfolio built with React Three Fiber and Framer Motion.</p>
+                        <a href="https://github.com/gauravkhatri0611" class="btn-link">View Project</a>
+                    </div>
+                    <div class="card">
+                        <h3>E-commerce Site</h3>
+                        <p>Full-stack e-commerce solution with Node.js backend and React.js frontend.</p>
+                        <a href="https://github.com/gauravkhatri0611" class="btn-link">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-about">
+                    <p><strong>Beyond Coding</strong></p>
+                    <p>I enjoy photography, blogging, and exploring new tech trends.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gaurav Khatri · Thanks for visiting my site</p>
+                <a href="#top" class="to-top">↑ Back to Top</a>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
