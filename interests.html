@@ -12,7 +12,6 @@
     <body>
         <header class="site-header">
             <div class="container header-inner">
-
                 <div class="branding">
                     <img src="images/logo.webp" alt="Logo of Gaurav Khatri" class="logo">
                     <div class="branding-text">
@@ -20,24 +19,32 @@
                     </div>
                 </div>
 
-                <nav aria-label="Main navigation" class="main-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="interests.html" aria-current="page">Interests</a></li>
-                        <li><a href="docs/GauravKhatri_Resume.pdf" target="_blank">Resume</a></li>
-                    </ul>
-                </nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <img src="images/menu.webp" alt="Menu" class="icon hamburger-icon">
+                    <img src="images/close.webp" alt="Close" class="icon close-icon">
+                </label>
 
-                <div class="header-actions">
-                    <a href="mailto:yourname@email.com" class="btn-primary">Contact Me</a>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/gaurav-khatri-61396616b/" aria-label="LinkedIn">
-                            <img src="images/linkedin.webp" alt="LinkedIn" class="icon">
-                        </a>
-                        <a href="https://github.com/gauravkhatri0611" aria-label="GitHub">
-                            <img src="images/github.webp" alt="GitHub" class="icon">
-                        </a>
+                <div class="menu">
+                    <nav aria-label="Main navigation" class="main-nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="interests.html">Interests</a></li>
+                            <li><a href="docs/GauravKhatri_Resume.pdf" target="_blank">Resume</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <a href="mailto:yourname@email.com" class="btn-primary">Contact Me</a>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/gaurav-khatri-61396616b/" aria-label="LinkedIn">
+                                <img src="images/linkedin.webp" alt="LinkedIn" class="icon">
+                            </a>
+                            <a href="https://github.com/gauravkhatri0611" aria-label="GitHub">
+                                <img src="images/github.webp" alt="GitHub" class="icon">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,7 +57,7 @@
                 <div class="interests-flex">
                     <article class="interest-item motivational-video">
                         <div class="video-content">
-                            <div class="video-wrapper">
+                            <div class="motivation-video-box">
                                 <video controls playsinline>
                                     <source src="video/VN20251003_213907.mp4" type="video/mp4">
                                     <track src="video/subtitles_en.vtt" kind="subtitles" srclang="en"
@@ -60,6 +67,7 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
+
                             <div class="video-text">
                                 <h3>December Motivational Video</h3>
                                 <p>I made this video as a way to express how I personally see December and the idea of
@@ -102,8 +110,7 @@
 
                         <div class="song-list">
                             <div class="song-item">
-                                <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/lTRiuFIWV54?si=Z98xFJ59-khgVJkF"
+                                <iframe src="https://www.youtube.com/embed/lTRiuFIWV54?si=Z98xFJ59-khgVJkF"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -112,8 +119,7 @@
                                 </div>
                             </div>
                             <div class="song-item">
-                                <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/C7WoqglcHDo?si=zTm2J9XhBIJ8tRaJ"
+                                <iframe src="https://www.youtube.com/embed/C7WoqglcHDo?si=zTm2J9XhBIJ8tRaJ"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -123,8 +129,7 @@
                             </div>
 
                             <div class="song-item">
-                                <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/kyXiHvO0TuM?si=eRXfgdAaDwg1uMBX"
+                                <iframe src="https://www.youtube.com/embed/kyXiHvO0TuM?si=eRXfgdAaDwg1uMBX"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -343,10 +343,6 @@ body {
     background: none;
   }
 }
-.video-wrapper {
-  text-align: center;
-  margin-top: 1rem;
-}
 .video-wrapper iframe {
   display: inline-block;
 }
@@ -772,3 +768,127 @@ p {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+.video-wrapper {
+  text-align: center;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (min-width: 1024px) {
+  .video-wrapper iframe,
+  .video-wrapper video {
+    width: 540px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .motivational-video .video-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .motivational-video .video-wrapper {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .motivational-video .video-text {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .motivational-video .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .motivational-video .video-text {
+    text-align: center;
+  }
+}
+
+.motivation-video-box {
+  text-align: center;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.motivation-video-box video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: contain;
+  max-height: 280px; 
+}
+
+@media (min-width: 768px) {
+  .motivational-video .video-content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .motivation-video-box {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .motivation-video-box video {
+    width: 90%;
+    height: auto;
+    max-height: 480px; 
+    object-fit: contain;
+    border-radius: 12px;
+  }
+
+  .motivational-video .video-text {
+    flex: 1 1 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .motivation-video-box video {
+    max-height: 520px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: relative;   
+    top: 0;               
+    max-height: none;     
+    overflow: visible;    
+    flex-direction: column;
+    transition: none;
+    display: none;     
+  }
+
+  .nav-toggle:checked ~ .menu {
+    display: flex;
+  }
+}
